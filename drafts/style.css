@@ -1,0 +1,92 @@
+:root {
+  --color-purple: #871cca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.end-text {
+  text-align: end;
+}
+
+.hidden {
+  display: none;
+}
+
+.purple-text {
+  color: var(--color-purple);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  width: 100%;
+  height: min-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  top: 0%;
+}
+footer {
+  bottom: 0%;
+}
+
+main {
+  display: flex;
+
+  align-items: center;
+}
+
+/* To Do */
+#to-do-list {
+  width: min-content;
+}
+
+.todo-box {
+  display: flex;
+
+  width: 100%;
+
+  border: 2px solid;
+}
+
+.todo-box > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-check {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ccc;
+  height: 100%;
+}
+
+/* Timer */
+#pomodoro-time {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}

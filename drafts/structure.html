@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="style.css" />
+<body>
+  <header>
+    <div id="pomodoro-type">
+      <h3>Pomodoro</h3>
+      <h2>20:5</h2>
+    </div>
+    <h1>for<span class="purple-text">(JOB)</span></h1>
+  </header>
+
+  <main>
+    <section id="to-do-list">
+      <h2 class="purple-text">To do</h2>
+      <div class="todo-box">
+        <input type="text" name="" id="todo-input-inner" />
+        <button id="add-todo" class="todo-button">+</button>
+      </div>
+
+      <!-- Add from JS -->
+      <div class="todo-box">
+        <div>
+          <input type="checkbox" name="complete-todo" class="todo-check" />
+          <p class="message-box">Messagem do todo</p>
+        </div>
+        <button class="todo-button remove">X</button>
+      </div>
+      <!-- -->
+    </section>
+
+    <section id="pomodoro-time">
+      <h3>Timer</h3>
+      <h1>10:00</h1>
+      <img src="" alt="play-timer" />
+    </section>
+  </main>
+  <footer>
+    <img src="" alt="config" />
+    <section id="musics" class="d-flex">
+      <div>
+        <span id="playlist" class="d-flex">
+          <h3 class="purple-text">PlayList:</h3>
+          <p>Musicas para me acostumar</p>
+        </span>
+        <p id="current-music" class="end-text">MIYACHI - MAINICHI</p>
+      </div>
+      <input
+        type="checkbox"
+        name="on-of-music"
+        id="on-of-music"
+        class="switch"
+      />
+    </section>
+  </footer>
+</body>
