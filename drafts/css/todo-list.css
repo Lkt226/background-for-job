@@ -1,0 +1,37 @@
+#to-do-list {
+  width: min-content;
+}
+
+.todo-box {
+  display: flex;
+
+  width: 100%;
+
+  stroke: white;
+  stroke-linecap: round;
+  stroke-width: 2px;
+}
+
+.todo-box > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-check {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ccc;
+  height: 100%;
+}
+
+.todo-button {
+  background: var(--color-success);
+  border: 1px solid var(--color-se);
+  border-radius: 0 5rem 5rem 0;
+}
+
+.remove {
+  background: var(--color-fail);
+}

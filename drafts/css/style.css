@@ -1,0 +1,53 @@
+/* Root Variables */
+@import url(./vars.css);
+
+/* Reader and Footer*/
+@import url(./header-and-footer.css);
+
+/* Todo list */
+@import url(./todo-list.css);
+
+/* Globals */
+@import url(./global.css);
+
+/* Responsive */
+@import url(./responsive.css);
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  color: var(--color-pr);
+
+  font-family: "Fira Code";
+  font-weight: 300;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--color-bg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+}
+
+/* Timer */
+#pomodoro-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+:root {
+  --color-bg: #202124;
+
+  --color-purple: #7b61ff;
+  --color-pr: #f5f5f5;
+  --color-se: #c4c4c4;
+
+  --color-success: #018768;
+  --color-fail: #b00020;
+
+  --color-redGr: linear-gradient(
+    180deg,
+    #b00020 -12.5%,
+    rgba(255, 255, 255, 0.507) 100%
+  );
+}
+
+/* Font Fira Code
+
+family = "Fira Code"
+weight = 300, 500 or 600
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;600&display=swap");
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+p {
+  font-size: 0.8rem;
+}

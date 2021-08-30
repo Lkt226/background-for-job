@@ -1,0 +1,19 @@
+@import url(./vars.css);
+
+.end-text {
+  text-align: end;
+}
+
+.hidden {
+  display: none;
+}
+
+.purple-text {
+  color: var(--color-purple);
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

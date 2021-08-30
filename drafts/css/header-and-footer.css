@@ -1,0 +1,17 @@
+@import url(./vars.css);
+
+header,
+footer {
+  width: 100%;
+  height: min-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  top: 0%;
+}
+footer {
+  bottom: 0%;
+}
