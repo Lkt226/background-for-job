@@ -5,12 +5,12 @@ import "../css/switch.css"
 export const Switch = (props)=>{
 
     props = {
-        width: "60px",
-        height: "34px",
+        width: props.width || "60px",
+        height: props.height || "34px",
 
-        c_width: "30px",
-        c_height: "30px",
-        content: "var(--color-pr)",     
+        c_width: props.c_width || "30px",
+        c_height: props.c_height || "30px",
+        content: props.content || "var(--color-pr)",     
     }
 
     const style = {

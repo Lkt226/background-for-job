@@ -1,0 +1,23 @@
+:root {
+  --grid-c: 3;
+  --grid-r: 5;
+}
+
+main {
+  height: 100%;
+
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main > .column {
+  display: flex;
+
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
