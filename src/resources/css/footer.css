@@ -1,0 +1,25 @@
+@import url("../root.css");
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: auto;
+  height: 10vh;
+
+  padding: 1.5rem;
+
+  background-color: var(--color-bg);
+  color: var(--color-pr);
+}
+
+footer > section {
+  padding: 0 0 0 1.5rem;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

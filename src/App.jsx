@@ -1,8 +1,22 @@
+import "./resources/css/body.css"
+
+import { Fragment } from "react";
+
+import {Header} from "./resources/partials/header"
+import {Footer} from "./resources/partials/footer"
+
 function App() {
   return (
-    <main>
+    <Fragment>
+      <Header/>
+      <main>
       
-    </main>
+
+      
+      </main>
+      <Footer/>
+    </Fragment>
+    
   );
 }
 

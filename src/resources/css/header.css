@@ -1,0 +1,19 @@
+@import url("../root.css");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: auto;
+  height: 10vh;
+
+  padding: 1.5rem;
+
+  background-color: var(--color-bg);
+  color: var(--color-pr);
+}
+
+#logo {
+  display: flex;
+}
