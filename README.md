@@ -14,4 +14,7 @@ The idea is create a job backscreen with a timer for pomodoro, in the job screen
 
 In stop screen, have fun actions (the initial idea is recomendeds videos on youtube max 5 minutes)
 
+## How to use
+1. Clone this git
+2. use npm start
 
