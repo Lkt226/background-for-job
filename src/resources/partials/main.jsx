@@ -1,4 +1,4 @@
-import {Timer} from "../components/modules"
+import {Timer, ToDO} from "../components/modules"
 import "../css/main.css"
 
 export const Main = ()=>{
@@ -7,24 +7,18 @@ export const Main = ()=>{
     return (
         <main>
             <div className="column">
-            <Timer/>
-            <Timer/>
-            <Timer/>
+          
             </div>
             <div className="column">
-            <Timer/>
-            <Timer/>
-            <Timer/>
+           
             </div>
             <div className="column">
+            <ToDO/>
             <Timer/>
-            <Timer/>
-            <Timer/>
+            <div></div>
             </div>
             <div className="column">
-            <Timer/>
-            <Timer/>
-            <Timer/>
+            
             </div>
             
         </main>
