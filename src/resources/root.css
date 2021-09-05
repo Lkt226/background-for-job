@@ -52,10 +52,20 @@ p {
 }
 
 /* Classes */
+/* Size */
+.w-100 {
+  width: 100%;
+}
+
+/* Text */
 .c-purple {
   color: var(--color-purple);
 }
+.bold {
+  font-weight: bold;
+}
 
+/*Position Text*/
 .end-t {
   text-align: end;
 }

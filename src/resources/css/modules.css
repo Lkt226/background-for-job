@@ -1,1 +1,15 @@
+/* *** Globals *** */
+.module {
+  margin: 1rem;
+}
+
 /* *** To Do List  *** */
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 20rem;
+}

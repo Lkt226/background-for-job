@@ -7,20 +7,10 @@ export const Main = ()=>{
     return (
         <main>
             <div className="column">
-          
-            </div>
-            <div className="column">
-           
-            </div>
-            <div className="column">
             <ToDO/>
             <Timer/>
             <div></div>
-            </div>
-            <div className="column">
-            
-            </div>
-            
+            </div> 
         </main>
     )
 }
