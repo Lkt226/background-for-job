@@ -14,4 +14,10 @@ The idea is create a job backscreen with a timer for pomodoro, in the job screen
 
 In stop screen, have fun actions (the initial idea is recomendeds videos on youtube max 5 minutes)
 
+## APP in current moment
+have a timer, but no config in GUI, modify time in const [getTime, setTime] = useState(->time<-)
+
+## How to use
+1. Clone this git
+2. use npm start
 
