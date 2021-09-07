@@ -26,9 +26,9 @@ main > .column > * {
   width: 33%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   main > .column > * {
-    width: 80%;
+    width: 20rem;
   }
 
   main > .column {

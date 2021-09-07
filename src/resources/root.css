@@ -64,8 +64,14 @@ p {
 .bold {
   font-weight: bold;
 }
+.c-error {
+  color: var(--color-fail);
+}
 
 /*Position Text*/
+.start-t {
+  text-align: start;
+}
 .end-t {
   text-align: end;
 }

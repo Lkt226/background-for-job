@@ -1,7 +1,9 @@
 import {initializeApp} from "firebase/app";
 
 import { getAuth } from 'firebase/auth';
-import { getDatabase } from 'firebase/database';
+import { getDatabase, ref } from 'firebase/database';
+
+const user = "lkt"
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -12,10 +14,15 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_APP_ID
   };
   
- 
-  const app = initializeApp(firebaseConfig);
-
+  initializeApp(firebaseConfig);
+  
   export const auth = getAuth()
-  export const database = getDatabase()
+
+  export const database = (path) => getRef(path)
+  
+  function getRef(path){
+    path = path || ""
+    return ref(getDatabase(), `users/${user}/${path}`)
+  }
 
   

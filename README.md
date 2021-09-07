@@ -26,6 +26,10 @@ have a timer, but no config in GUI, modify time in const [getTime, setTime] = us
 
 i'm add a todo list 05/09 but not save, and don't stylized current.
 
+to do list, semi complete, i not customize he, but add, remove and update in firebase.
+
+if your need multiples todos, use "," or add one for one.
+
 ## How to use
 
 1. Clone this git
