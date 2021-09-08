@@ -23,14 +23,15 @@ main > .column {
 }
 
 main > .column > * {
+  max-width: 20rem;
   width: 33%;
 }
 
 @media (max-width: 800px) {
   main > .column > * {
-    width: 20rem;
+    max-width: 20rem;
+    width: 80%;
   }
-
   main > .column {
     flex-direction: column-reverse;
     justify-content: center;

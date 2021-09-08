@@ -1,6 +1,7 @@
 import {initializeApp} from "firebase/app";
 
-import { getAuth } from 'firebase/auth';
+import { getAuth,GoogleAuthProvider, signInWithRedirect, signOut, getRedirectResult} from 'firebase/auth';
+
 import { getDatabase, ref } from 'firebase/database';
 
 const user = "lkt"
@@ -16,8 +17,50 @@ const firebaseConfig = {
   
   initializeApp(firebaseConfig);
   
+  /// Auths
   export const auth = getAuth()
 
+  // With email
+
+
+  // With google
+  export const authWithGoogle = {
+    login: ()=>{
+      signInWithRedirect(auth, new GoogleAuthProvider());
+    },
+
+    reconnect: ()=>{
+      getRedirectResult(auth)
+      .then((result) => {
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        
+        const user = result.user;
+        
+        console.log([credential, token, user, result])
+      }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+      
+        const email = error.email;
+
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        
+        console.log([errorCode, errorMessage, email, credential, error])
+        authWithGoogle.login()
+      });
+    },
+
+    logout: ()=>{
+      signOut(auth).then();
+    },
+
+  }
+  
+  
+
+
+  /// Database
   export const database = (path) => getRef(path)
   
   function getRef(path){
