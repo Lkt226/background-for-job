@@ -1,0 +1,26 @@
+#cardConnection {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.cardConnect {
+  width: 80%;
+  max-width: 20rem;
+}
+
+.cardConnect > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#lastDiv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

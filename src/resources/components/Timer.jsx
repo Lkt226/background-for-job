@@ -11,12 +11,14 @@ import "../css/modules.css"
 
 export const Timer = ()=>{
 
+  const timerItem = document.querySelector("#timer-date")
+
   //Vars, contain status, time for job and time for break
   const [jobTime, setJobTime] = useState(0)
   const [breakTime, setBreakTime] = useState(0)
   const [isJOB, setIsJOB] = useState(true)
 
-  const [active, setActive] = useState(true)
+  const [active, setActive] = useState(false)
 
   //Get time config on firebase
   useEffect(()=>{
@@ -49,6 +51,10 @@ export const Timer = ()=>{
 
   //Function for timer, count current value -1 every seconds
   function Timer(){
+    if(timerItem !== null){
+      active === false ? timerItem.classList.add("c-error") : timerItem.classList.remove("c-error")
+      //active === true ? timerItem.classList.add("c-success") : timerItem.classList.remove("c-success")
+    }
     if (time !== null && active === true){
       const timer = setInterval(()=>{
         if (time > 0){
@@ -71,7 +77,7 @@ export const Timer = ()=>{
       return(
         <Fragment>
             <h4>Timer</h4>
-            <h1>{util.secToTime(time)}</h1>
+            <h1 id="timer-date" className="c-error">{util.secToTime(time)}</h1>
             <img onClick={()=>{setActive(!active)}} className="icon" src={power} alt="Start timer" />
         </Fragment>
       )

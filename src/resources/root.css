@@ -61,11 +61,19 @@ p {
 .c-purple {
   color: var(--color-purple);
 }
+.c-gray {
+  color: var(--color-se);
+}
+
 .bold {
   font-weight: bold;
 }
+
 .c-error {
   color: var(--color-fail);
+}
+.c-success {
+  color: var(--color-success);
 }
 
 /*Position Text*/

@@ -4,7 +4,7 @@ import { getAuth,GoogleAuthProvider, signInWithRedirect, signOut, getRedirectRes
 
 import { getDatabase, ref } from 'firebase/database';
 
-const user = "lkt"
+export const getUser = []
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -65,7 +65,7 @@ const firebaseConfig = {
   
   function getRef(path){
     path = path || ""
-    return ref(getDatabase(), `users/${user}/${path}`)
+    return ref(getDatabase(), `users/${getUser[getUser.length-1]}/${path}`)
   }
 
   
