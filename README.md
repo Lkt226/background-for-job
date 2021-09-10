@@ -28,9 +28,13 @@ i'm add a todo list 05/09 but not save, and don't stylized current.
 
 to do list, semi complete, i not customize he, but add, remove and update in firebase.
 
-if your need multiples todos, use "," or add one for one.
+if your need multiples todos, use ", " or add one for one.
+
+for default the timer is paused, click in start for iniciate the timer.
 
 ## How to use
 
 1. Clone this git
 2. use npm start
+
+or access: https://forjob-project.web.app
