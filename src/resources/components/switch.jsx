@@ -5,6 +5,8 @@ import "../css/switch.css"
 export const Switch = (props)=>{
 
     props = {
+        id: props.id || "",
+
         width: props.width || "60px",
         height: props.height || "34px",
 
@@ -29,18 +31,18 @@ export const Switch = (props)=>{
 
     const render = {
         checked: 
-        <section  className="switch checked" style={style.switch}>
+        <section id={props.id} className="switch checked" style={style.switch}>
             <div className="content-switch" style={style.content_switch}></div>
         </section>,
         
         unChecked: 
-        <section  className="switch unChecked" style={style.switch}>
+        <section id={props.id} className="switch unChecked" style={style.switch}>
             <div className="content-switch" style={style.content_switch}></div>
         </section>   
         
     }
 
-    const [checked, setChecked] = useState(true)
+    const [checked, setChecked] = useState(props.checked)
 
     const getRender = (state)=> state === true ? render.checked : render.unChecked
     

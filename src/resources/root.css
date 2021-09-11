@@ -64,6 +64,9 @@ p {
 .c-gray {
   color: var(--color-se);
 }
+.c-white {
+  color: white;
+}
 
 .bold {
   font-weight: bold;
@@ -74,6 +77,55 @@ p {
 }
 .c-success {
   color: var(--color-success);
+}
+
+/* background */
+.w-bg {
+  background-color: var(--color-pr);
+}
+
+.p-bg {
+  background-color: var(--color-purple);
+}
+
+.c-bg-center {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.f-bg-center {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+.f-bg-center * {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.r-bg {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.between {
+  justify-content: space-between;
+}
+/* Button */
+button {
+  border-radius: 10px;
+}
+
+.b-noRound {
+  border-radius: 0px;
 }
 
 /*Position Text*/
