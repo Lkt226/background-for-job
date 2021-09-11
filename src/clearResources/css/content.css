@@ -1,0 +1,83 @@
+body,
+body > #root {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0;
+}
+
+header *,
+footer * {
+  padding: 0;
+  text-align: end;
+}
+
+header {
+  justify-content: space-between;
+}
+
+footer {
+  justify-content: flex-end;
+}
+
+footer > section {
+  padding-left: 1rem;
+}
+
+header > .logo {
+  align-items: center;
+}
+
+.config {
+  position: absolute;
+
+  top: 0.4rem;
+  left: 0.4rem;
+
+  width: 60%;
+  max-width: 20rem;
+
+  background-color: var(--color-bg);
+}
+
+.config > .header,
+.config > .header > * {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.config .inline {
+  padding: 0;
+}
+.config .inline .text-purple {
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.config .inline .editable {
+  text-decoration: underline;
+  line-break: anywhere;
+}

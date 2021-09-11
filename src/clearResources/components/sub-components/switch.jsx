@@ -1,0 +1,58 @@
+import { useState } from "react"
+import "../../css/root.css"
+import "../../css/switch.css"
+
+export const Switch = (props)=>{
+
+    props = {
+        id: props.id || "",
+
+        width: props.width || "55px",
+        height: props.height || "34px",
+
+        c_width: props.c_width || "30px",
+        c_height: props.c_height || "30px",
+        content: props.content || "var(--color-pr)",     
+    }
+
+    const style = {
+        switch: {
+            width: props.width,
+            height: props.height,
+        },
+
+        content_switch: {
+            width: props.c_width,
+            height: props.c_height,
+
+            background: props.content,
+        }
+    }
+
+    const render = {
+        checked: 
+        <section id={props.id} className="switch checked" style={style.switch}>
+            <div className="content-switch" style={style.content_switch}></div>
+        </section>,
+        
+        unChecked: 
+        <section id={props.id} className="switch unChecked" style={style.switch}>
+            <div className="content-switch" style={style.content_switch}></div>
+        </section>   
+        
+    }
+
+    const [checked, setChecked] = useState(props.checked)
+
+    const getRender = (state)=> state === true ? render.checked : render.unChecked
+    
+    const handleOnClick = ()=>{
+        checked === true ? setChecked(false) : setChecked(true)     
+    }
+
+    return (
+        <section onClick={handleOnClick}>
+            {getRender(checked)}
+        </section>
+    ) 
+}

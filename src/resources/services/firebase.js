@@ -56,16 +56,13 @@ const firebaseConfig = {
     },
 
   }
-  
-  
-
 
   /// Database
-  export const database = (path) => getRef(path)
+  export const database = (user ,path) => getRef(user, path)
   
-  function getRef(path){
+  function getRef(user, path){
     path = path || ""
-    return ref(getDatabase(), `users/${getUser[getUser.length-1]}/${path}`)
+    return ref(getDatabase(), `users/${user || getUser[getUser.length-1]}/${path}`)
   }
 
   

@@ -32,6 +32,8 @@ if your need multiples todos, use ", " or add one for one.
 
 for default the timer is paused, click in start for iniciate the timer.
 
+11/09, i'm re-create components for more interactions, but not atualize the site for comparate, this is the site : https://forjob-project.web.app
+
 ## How to use
 
 1. Clone this git
