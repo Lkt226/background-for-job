@@ -40,10 +40,11 @@ header {
 
 footer {
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
-footer > section {
-  padding-left: 1rem;
+footer section {
+  margin-left: 1rem;
 }
 
 header > .logo {

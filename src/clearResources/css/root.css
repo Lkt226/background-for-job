@@ -93,7 +93,11 @@ input::placeholder {
 }
 
 .text-green {
-  color: var(--color-success);
+  color: var(--color-success) !important;
+}
+
+.text-red {
+  color: var(--color-fail) !important;
 }
 
 .logo {
@@ -130,6 +134,21 @@ input::placeholder {
   color: var(--color-bg);
 }
 
+.only-img {
+  background-color: transparent;
+  border-radius: 0;
+}
+
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+
+.w-100 {
+  width: 100%;
 }

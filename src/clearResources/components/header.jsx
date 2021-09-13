@@ -4,14 +4,15 @@ import "../css/root.css"
 import "../css/content.css"
 
 import gear from "../../icons/Gear.svg"
+import { Timer } from "./modules/timer"
 
-export const Header = ()=>{
+export const Header = (props)=>{
 
   const [menu, statusMenu] = useState("hidden")
 
   const render = {
     get: ()=>{
-      return(
+        return(
         <header>
           <img  src={gear} alt="configurations"
                 sizes="5rem" srcset=""
@@ -28,7 +29,7 @@ export const Header = ()=>{
         <menu id="config" className={`config ${menu}`}>
           <section className="header inline">
             <img  src={gear} alt="configurations"
-                  sizes="5rem" srcset=""
+                  className="icon" srcSet=""
                   onClick={act.toggleMenu}/>
 
             <h5>Configurações</h5>
@@ -41,15 +42,16 @@ export const Header = ()=>{
       )
     },
     configList: ()=>{
-      return configs.map((item)=>{
+      return configs.map((item, id)=>{
         const large = item.isLarge === true ? "large" : ""
         const special = item.special !== null ?
         <p className="text-purple">{item.special}</p> : ""
-        return <span className={`inline ${large}`} id="Pomorodo">
+
+        return <span key={id} className={`inline ${large}`} id="Pomorodo">
             <p>{item.name}:</p>
             {special}
             <h5 className="text-purple editable" 
-            contenteditable="true">{item.edit}</h5>
+            contentEditable="true">{item.edit}</h5>
           </span>
       })
       

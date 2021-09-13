@@ -7,20 +7,24 @@ import {Switch} from "./sub-components/switch"
 
 export const Footer = ()=>{
 
+  function getSwitch(status){
+    console.log(status)
+  }
+
   const render = {
     get: ()=>{
       return(
         <footer>
           <div>
-            <span class="inline">
-              <h3 class="text-purple">Playlist:</h3>
+            <span className="inline">
+              <h3 className="text-purple">Playlist:</h3>
               <h5>#Musicas para acostumar</h5>
             </span>
 
             <p>#MIYACHI - MAINICHI 毎日(OFFICIAL VIDEO)</p>
           </div>
 
-          {<Switch/>}
+          {<Switch status={getSwitch}/>}
         </footer>
       )
     }

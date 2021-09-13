@@ -1,21 +1,29 @@
 .switch {
+  width: 3.3rem;
+  height: 2rem;
+  padding: 0.15rem;
+
+  background-color: var(--color-se);
+
   display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
   align-items: center;
 
   border-radius: 100vw;
-
-  padding: 0 5% 0 5%;
 }
+
 .content-switch {
-  border-radius: 100vw;
-}
+  width: 1.75rem;
+  height: 1.75rem;
 
-.unChecked {
-  justify-content: flex-start;
-  background-color: var(--color-se);
+  background-color: var(--color-pr);
+
+  border-radius: 100%;
 }
 
 .checked {
-  justify-content: flex-end;
   background-color: var(--color-purple);
+  justify-content: flex-end;
 }
