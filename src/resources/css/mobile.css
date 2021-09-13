@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  #grid {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .module {
+    width: 80%;
+  }
+}

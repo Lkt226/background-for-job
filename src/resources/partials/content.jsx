@@ -10,7 +10,8 @@ export const Content = ()=>{
     <Fragment>
       <Header/>
       <Grid/>
-      <Footer/>
+      
     </Fragment>
   )
+  // <Footer/>
 }

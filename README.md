@@ -34,9 +34,32 @@ for default the timer is paused, click in start for iniciate the timer.
 
 11/09, i'm re-create components for more interactions, but not atualize the site for comparate, this is the site : https://forjob-project.web.app
 
+13/09, site remodeled
+
 ## How to use
 
 1. Clone this git
 2. use npm start
 
 or access: https://forjob-project.web.app
+
+## Future ideas
+
+1. 13/09 - add in list "\*clear room, badroom, car and roof"
+   result(
+   clear room
+   clear badroom
+   clear car
+   clear roof
+   )
+2. 13/09 - add song in timer finish
+
+3. 13/09 - send timer to header on break time
+
+### Notes
+
+i'm add a todo list 05/09 but not save, and don't stylized current.
+
+11/09, i'm re-create components for more interactions, but not atualize the site for comparate, this is the site : https://forjob-project.web.app
+
+13/09, site remodeled, styled, more interative and intuitive. but i need ideas for teaching uses, like uses "," for multiples todo or click in text for mark checked.

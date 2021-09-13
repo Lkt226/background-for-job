@@ -1,8 +1,8 @@
 import { onValue, remove, set } from "@firebase/database";
 import {useEffect, useState} from "react"
-import {database} from "../services/firebase"
+import {database} from "../../src/resources/services/firebase"
 
-import { util } from "../services/utils";
+import { util } from "../../src/resources/services/utils";
 
 import "../root.css"
 import "../css/modules.css"

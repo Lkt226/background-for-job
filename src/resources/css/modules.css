@@ -1,15 +1,101 @@
-/* *** Globals *** */
 .module {
-  margin: 1rem;
-}
+  background-color: transparent;
 
-/* *** To Do List  *** */
-
-.todoItem {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
+  width: 33%;
+
+  margin: 1%;
+}
+
+.inline-p0 {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#timer > * {
+  padding: 0;
+}
+
+.p-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0;
+}
+
+.l-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+}
+
+.todo-item-text {
+  border-bottom: 2px solid var(--color-se);
+  width: 100%;
+}
+
+.todo-item {
   width: 100%;
   max-width: 20rem;
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding: 0 0 1rem 0;
+
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.todo-button {
+  background-color: var(--color-fail);
+  border-radius: 0 100vw 100vw 100vw;
+
+  height: min-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.2rem;
+}
+
+.add-todo {
+  background-color: var(--color-purple);
+}
+
+.todo-button:hover ~ .todo-item-text {
+  color: var(--color-fail);
+  border-color: var(--color-fail);
+}
+
+.todo-button:hover {
+  border-radius: 100vw 100vw 100vw 0;
+}
+.todo-button:hover ~ .check-todo {
+  border-radius: 100vw 0 100vw 100vw;
+}
+
+.add-todo:hover ~ #input-todo {
+  color: var(--color-purple);
+}
+.add-todo:hover {
+  border-radius: 100vw 100vw 100vw 0;
+}
+
+.todo-checked {
+  color: var(--color-success);
+  font-weight: 500;
+  border-color: var(--color-success);
+}
+
+.center {
+  align-items: center;
+}
+
+#todo-list {
+  align-items: flex-start;
 }

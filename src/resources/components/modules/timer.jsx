@@ -35,8 +35,6 @@ export const Timer = ()=>{
         }
         else {
           update(getDB(user.uid), {timer: "20:5"})
-          getUser(snap.val().timer.split(":"))
-          setTime(snap.val().timer.split(":")[0]*60)  
         }
       })
     })

@@ -1,8 +1,10 @@
 import { Fragment, useState } from "react";
 
-import {Welcome} from "./clearResources/partials/welcome"
-import {Content} from "./clearResources/partials/content"
-import { Error404 } from "./clearResources/partials/error404";
+import {Welcome} from "./resources/partials/welcome"
+import {Content} from "./resources/partials/content"
+import { Error404 } from "./resources/partials/error404";
+
+import "./resources/css/mobile.css"
 
 function App(props) {
   const [page, newPage] = useState(0)

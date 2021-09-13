@@ -8,7 +8,7 @@ import {Loading} from "./loading.jsx"
 import "../css/root.css"
 import "../css/welcome.css"
 
-import { authWithGoogle, auth, database } from "../../resources/services/firebase.js"
+import { authWithGoogle, auth, database } from "../services/firebase.js"
 
 //const uDB = database()
 export const Welcome = (prop)=>{

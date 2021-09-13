@@ -3,7 +3,7 @@ import {Timer} from "../components/Timer"
 import {Player} from "../components/player"
 import "../css/main.css"
 
-import {authWithGoogle} from "../services/firebase"
+import {authWithGoogle} from "../../src/resources/services/firebase"
 
 export const Main = (props)=>{
 

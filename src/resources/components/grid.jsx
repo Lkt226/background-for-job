@@ -2,16 +2,15 @@ import "../css/root.css"
 import "../css/modules.css"
 
 import { Timer } from "../components/modules/timer"
-import { useState } from "react"
 import { TodoList } from "./modules/todoList"
 
 export const Grid = ()=>{
 
   const types = {
     row: (inner)=>{
-      return <div className="inline large">{inner}</div>
+      return <div id="grid" className="inline large">{inner}</div>
     },
-    emp: <div className="module">1</div>,
+    emp: <div className="module">&nbsp;</div>,
     timer: <Timer/>,
     todoList: <TodoList/>,
   }

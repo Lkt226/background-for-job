@@ -6,6 +6,8 @@ import "../css/content.css"
 import gear from "../../icons/Gear.svg"
 import { Timer } from "./modules/timer"
 
+import {authWithGoogle} from "../../resources/services/firebase"
+
 export const Header = (props)=>{
 
   const [menu, statusMenu] = useState("hidden")
@@ -38,6 +40,7 @@ export const Header = (props)=>{
           <section className="main">
             {render.configList()}
           </section>
+          <h5 className="text-purple" onClick={()=>{window.location.reload(); authWithGoogle.logout(); }}>Quit</h5>
         </menu>
       )
     },
