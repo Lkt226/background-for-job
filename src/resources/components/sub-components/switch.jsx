@@ -5,8 +5,6 @@ import "../../css/switch.css"
 export const Switch = (props)=>{
   const [status, newStatus] = useState(false)
 
-  //props.state(status)
-
   const render = {
     checked: ()=>{
       return (

@@ -56,6 +56,14 @@ or access: https://forjob-project.web.app
 
 3. 13/09 - send timer to header on break time
 
+4. 13/09 - add modules on grid
+
+5. 13/09 - create and add modules, online.
+
+6. 14/09 - modules configs for diferents designs
+
+7. 14/09 - add item on press Enter with input selected
+
 ### Notes
 
 i'm add a todo list 05/09 but not save, and don't stylized current.

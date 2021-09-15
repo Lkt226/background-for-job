@@ -8,7 +8,7 @@ import {Loading} from "./loading.jsx"
 import "../css/root.css"
 import "../css/welcome.css"
 
-import { authWithGoogle, auth, database } from "../services/firebase.js"
+import { authWithGoogle, auth, database, getUserInfos } from "../services/firebase.js"
 
 //const uDB = database()
 export const Welcome = (prop)=>{
@@ -30,7 +30,12 @@ export const Welcome = (prop)=>{
         })
       }else{
         getUser(snapshot.val())
-        snapshot.val().name === "" ? newPage(3) : newPage(4)
+        if(snapshot.val().name === "") newPage(3) 
+        else {
+          getUserInfos(snapshot.val().name)
+          newPage(4)
+        }
+
       }
     });                                         
     else newPage(1)

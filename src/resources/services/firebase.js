@@ -1,6 +1,6 @@
 import {initializeApp} from "firebase/app";
 
-import { getAuth,GoogleAuthProvider, signInWithRedirect, signOut, getRedirectResult} from 'firebase/auth';
+import { getAuth,GoogleAuthProvider, signInWithRedirect, signOut, getRedirectResult, onAuthStateChanged} from 'firebase/auth';
 
 import { getDatabase, ref } from 'firebase/database';
 
@@ -20,7 +20,20 @@ const firebaseConfig = {
   /// Auths
   export const auth = getAuth()
 
-  // With email
+  //User
+  export const userinfo = []
+
+  export const getUserInfos = (extra)=>{
+    extra = extra || ""
+    onAuthStateChanged(auth, (user)=>{
+      if (user !== null){
+        userinfo.push(user.uid)
+        userinfo.push(user.email)
+        if(extra !== "") userinfo.push(extra)
+      }
+      else window.location.reload()
+    })
+  }
 
 
   // With google

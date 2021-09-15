@@ -3,8 +3,19 @@ import "../css/modules.css"
 
 import { Timer } from "../components/modules/timer"
 import { TodoList } from "./modules/todoList"
+import { useEffect, useState } from "react"
+import { database, userinfo } from "../services/firebase"
+import { onValue, update } from "@firebase/database"
 
 export const Grid = ()=>{
+  const [user, getUser] = useState()
+
+  const db = (id,_user,path,)=>{
+    id = id || ""
+    _user = _user || user.id
+    path = path || `/modules${id}`
+    return database(_user, path)
+  }
 
   const types = {
     row: (inner)=>{
@@ -14,7 +25,21 @@ export const Grid = ()=>{
     timer: <Timer/>,
     todoList: <TodoList/>,
   }
-  
+
+  useEffect(()=>{
+    const id = userinfo[0], email = userinfo[1], name = userinfo[2]
+    getUser({id: id, email: email, name: name })
+    
+    onValue(db("",id), (snap)=>{
+      if(snap.exists()) console.log(snap.val())
+      else {
+        update(db("/shop",id), {
+          myModules: ["todoList"]
+        })
+      }      
+    })
+
+  },[])
 
   const render = {
     job:()=>{
