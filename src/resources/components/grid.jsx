@@ -7,6 +7,8 @@ import { useEffect, useState } from "react"
 import { database, userinfo } from "../services/firebase"
 import { onValue, update } from "@firebase/database"
 
+import add from "../../icons/Add.svg"
+
 export const Grid = ()=>{
   const [user, getUser] = useState()
 
@@ -21,7 +23,7 @@ export const Grid = ()=>{
     row: (inner)=>{
       return <div id="grid" className="inline large">{inner}</div>
     },
-    emp: <div className="module">&nbsp;</div>,
+    emp: <div className="module"><button className="circle"><img src={add} alt="Add modulo" /></button></div>,
     timer: <Timer/>,
     todoList: <TodoList/>,
   }
